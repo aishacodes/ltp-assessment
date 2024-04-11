@@ -27,7 +27,7 @@ Start the application with yarn dev or npm run dev
 
 [Preview Here](https://benevolent-stroopwafel-4de261.netlify.app/)
 
-![screenshot](./public/image/snip.png)
+![screenshot](./public/images/snip.png)
 
 ## Addtional Info
 
