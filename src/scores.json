@@ -1,7 +1,7 @@
 [
   {
     "Participant": "Vera voorbeeld",
-    "Total": null,
+    "Total": "4.0",
     "Enthousiasm": 4.8,
     "Reliability": 2.4,
     "MBOLevel": "D"
@@ -9,17 +9,17 @@
   {
     "Participant": "Donald duck",
     "Total": null,
-    "Enthousiasm": 1.4,
+    "Enthousiasm": 2.4,
     "Reliability": 3.2,
     "MBOLevel": "A",
-    "Teamwork": 7
+    "Teamwork": null
   },
   {
     "Participant": "Joe duck",
-    "Total": null,
-    "Enthousiasm": 1.4,
+    "Total": "2.0",
+    "Enthousiasm": null,
     "Reliability": 9.2,
     "MBOLevel": "C",
-    "Teamwork": 5
+    "Teamwork": null
   }
 ]

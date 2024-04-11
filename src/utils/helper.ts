@@ -52,6 +52,7 @@ export const getLowestCompetenceValue = (data: Data[], competency: any) => {
   const refinedData = data.filter(
     (el) => el.hasOwnProperty(competency) && el[competency] !== null
   );
+  if (refinedData.length < 1) return "No value";
 
   let isLevel = isNaN(refinedData[0][competency]);
 
@@ -75,6 +76,7 @@ export const getHighestCompetenceValue = (data: Data[], competency: any) => {
   const refinedData = data.filter(
     (el) => el.hasOwnProperty(competency) && el[competency] !== null
   );
+  if (refinedData.length < 1) return "No value";
 
   let isLevel = isNaN(refinedData[0][competency]);
 
@@ -98,6 +100,8 @@ export const getAverageCompetenceValue = (data: Data[], competency: any) => {
   const refinedData = data.filter(
     (el) => el.hasOwnProperty(competency) && el[competency] !== null
   );
+  if (refinedData.length < 1) return "No value";
+
   let isLevel = isNaN(refinedData[0][competency]);
 
   const scores = refinedData.map((item) =>
@@ -105,7 +109,8 @@ export const getAverageCompetenceValue = (data: Data[], competency: any) => {
   );
 
   let average = scores.length
-    ? scores.reduce((acc, curr) => acc + curr, 0) / scores.length
+    ? scores.reduce((acc, curr) => Number(acc) + Number(curr), 0) /
+      scores.length
     : NaN;
 
   return isLevel ? getLevelValue(Math.ceil(average)) : average;

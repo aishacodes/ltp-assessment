@@ -4,7 +4,7 @@ QuickLookup App: a quick lookup app to get scores on demand.
 
 ## Getting Started
 
-Clone or download this repository and run yarn or npm install
+Clone or download this repository and run yarn or npm install.
 Start the application with yarn dev or npm run dev
 
 ## Prequisite

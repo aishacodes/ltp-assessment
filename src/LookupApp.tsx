@@ -62,10 +62,14 @@ const LookupApp = () => {
     }
 
     if (!isNaN(result)) {
-      result = result.toFixed(1);
+      result = Number(result).toFixed(1);
     }
 
-    setOutput(`The ${summary} for ${competency} is ${result}`);
+    setOutput(
+      result == "No value"
+        ? `${competency} has no value throughout`
+        : `The ${summary} for ${competency} is ${result}`
+    );
   };
 
   return (
