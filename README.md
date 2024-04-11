@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+# QuickLookupApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+QuickLookup App: a quick lookup app to get scores on demand.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clone or download this repository and run yarn or npm install
+Start the application with yarn dev or npm run dev
 
-## Expanding the ESLint configuration
+## Prequisite
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Your browser version must be recent for a better experience.
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Get participant scores and level
+- Get competence summary
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Tech/framework used
+
+- CSS
+- ReactJS
+- Vite
+- Typescript
+
+## Preview
+
+[Preview Here](https://benevolent-stroopwafel-4de261.netlify.app/)
+
+![screenshot](./public/image/snip.png)
+
+## Addtional Info
+
+- This is an assessment for LTP frontend role

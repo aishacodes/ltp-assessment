@@ -61,16 +61,16 @@ const LookupApp = () => {
         result = "Invalid summary";
     }
 
-    // if (!isNaN(result)) {
-    //   result = result.toFixed(1);
-    // }
+    if (!isNaN(result)) {
+      result = result.toFixed(1);
+    }
 
     setOutput(`The ${summary} for ${competency} is ${result}`);
   };
 
   return (
     <main>
-      <p className="competence">
+      <div className="competence">
         Competence:
         <select
           required
@@ -84,8 +84,8 @@ const LookupApp = () => {
             </option>
           ))}
         </select>
-      </p>
-      <p className="competence">
+      </div>
+      <div className="competence">
         Parameter:
         <div className="param">
           <div className="param-options">
@@ -142,7 +142,7 @@ const LookupApp = () => {
             </select>
           )}
         </div>
-      </p>
+      </div>
 
       <button
         disabled={!competency || (!participant && !summary)}
