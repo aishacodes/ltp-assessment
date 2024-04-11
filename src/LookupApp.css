@@ -2,6 +2,10 @@ main {
   width: 50%;
   margin: 5vh auto;
 }
+h1 {
+  margin: 0 auto 2rem;
+  text-align: center;
+}
 .competence {
   display: flex;
   margin-bottom: 1rem;

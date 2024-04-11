@@ -74,6 +74,7 @@ const LookupApp = () => {
 
   return (
     <main>
+      <h1>Quick lookup App</h1>
       <div className="competence">
         Competence:
         <select
